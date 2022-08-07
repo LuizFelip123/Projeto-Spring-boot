@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="enddds">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SDME – Cadastro</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/css/adminlte.min.css">
+</head>
+
+<body>
+  <div class="card-header bg-info">
+    <h3 class="card-title text-center ">Cadastro de Usuário</h3>
+    <a href="loginUsuario.html" class="text-right">
+      <p>Fazer Login</p>
+    </a>
+  </div>
+  <div class="col-md-6 offset-md-3"">  
+<form class=" center" action="" method="post">
+    <div class="card card-info">
+
+      <div class="card-body">
+        <h4>Dados do Usuário</h4>
+        <div class="input-group  mb-3">
+
+          <input type="text" class="form-control" placeholder="Nome Completo">
+        </div>
+
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="CPF">
+
+        </div>
+        <div class="input-group  mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+          </div>
+          <input type="email" class="form-control" placeholder="E-mail">
+        </div>
+        <div class="form-group">
+          <label>Data de Nascimento:</label>
+
+          <div class="input-group ">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+            </div>
+            <input type="text" class="form-control" data-inputmask-alias="datetime"
+              data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+          </div>
+          <div class="form-group ">
+            <label>Número de Telefone:</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-phone"></i></span>
+              </div>
+              <input type="text" class="form-control"
+                data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
+            </div>
+          </div>
+          <!-- /.input group -->
+        </div>
+        <h4>Endereço</h4>
+
+        <div class="input-group  mb-3">
+
+          <input type="text" class="form-control" placeholder="Bairro">
+        </div>
+
+
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="CEP">
+        </div>
+
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Lougradouro">
+          <div class="input-group-append">
+          </div>
+        </div>
+
+        <div class="input-group col-6  mb-3">
+          <input class="form-control" type="text" placeholder="Complemento" class="form-control">
+
+        </div>
+
+        <div class="input-group col-6 mb-3">
+          <input class="form-control" type="text" placeholder="Número/Código" class="form-control">
+        </div>
+        <h4>Senha</h4>
+        <div class="input-group  mb-3">
+          <input class="form-control" type="password" placeholder="Senha" class="form-control">
+        </div>
+      </div>
+
+      <div class="text-right">
+        <button class="btn btn-info" type="submit"> Cadastrar</button>
+      </div>
+      </form>
+    </div>
+
+</body>
+
+</html>
