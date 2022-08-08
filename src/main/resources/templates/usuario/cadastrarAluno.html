@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastrar Aluno</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.2.0/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <!-- Left navbar links -->
+    <!-- /Left navbar links -->
+
+    <!-- Right navbar links -->
+    <!-- /Right navbar links -->
+    <!-- /Navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <!-- /Sidebar user (optional) -->
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  Alunos Dependentes
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../forms/general.html" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Cadastrar</p>
+                  </a>
+                </li>
+              </ul>
+        </nav>
+        <!-- /Sidebar Menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Cadastro de Aluno</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="../../index.html">Página Principal</a></li>
+                <li class="breadcrumb-item active">Cadastro de Aluno </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <form action="">
+        <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- left column -->
+              <div class="col-md-12">
+                <!-- general form elements -->
+
+
+
+
+                <!-- Input addon -->
+                <div class="card card-info">
+                  <div class="card-header">
+                    <h3 class="card-title">Formulário</h3>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="p-3 mb-2 bg-dark text-white text-center">Dados do Aluno</h4>
+                    <div class="input-group mb-3">
+
+                      <input type="text" class="form-control" placeholder="Nome Completo">
+                    </div>
+
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="CPF">
+
+                    </div>
+
+                    <div class="form-group">
+                      <label>Data de Nascimento:</label>
+
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                        </div>
+                        <input type="text" class="form-control" data-inputmask-alias="datetime"
+                          data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                      </div>
+
+                      <!-- /.input group -->
+                    </div>
+                    <label for="">Sexo:</label>
+
+                    <div style="display:inline; margin-left:2px;">
+                      <input type="radio" id="Masculino" name="sexo" value="Masculino">
+                      <label for="html">Masculino</label>
+
+
+                      <input class="mb-3" type="radio" id="Feminino" name="sexo" value="Feminino">
+                      <label for="Feminino">Feminino</label>
+
+                    </div>
+                    <div class="input-group mb-3">
+
+                      <input type="text" class="form-control" placeholder="Nacionalidade">
+                    </div>
+                    <div class="input-group mb-3">
+
+                      <input type="text" class="form-control" placeholder="Naturalidade">
+                    </div>
+
+                    <div class="input-group mb-3">
+
+                      <input type="text" class="form-control" placeholder="Número do cartão do SUS">
+                    </div>
+
+                    <label for="">Possui Deficiência(s)? :</label>
+
+                    <div style="display:inline; margin-left:2px;">
+                      <input type="radio" id="sim" name="defeciencia" value="sim">
+                      <label for="html">Sim</label>
+
+                      <input class="mb-3" type="radio" id="nao" name="defeciencia" value="nao">
+                      <label for="nao">Não</label>
+                      <div class="input-group mb-3">
+                        <label for="avatar"> Laudo médico:</label>
+                        <br>
+                        <input type="file" id="laudo" name="laudo" type="file"
+                          accept="application/pdf, application/vnd.ms-excel" style="display:inline; margin-left:4px;">
+                      </div>
+
+                    </div>
+                    <h4 class="p-3 mb-2 bg-dark text-white text-center"> Dados Escolares</h4>
+                    <div class="input-group mb-3 row col-12 col-sm-6">
+                      <Label for="colegio"> Colégio: </Label>
+                      <select class="form-control select2 select2-danger" name="colegio" id="colegio">
+                        <option value="volvo">Colégio Estadual São Felipe</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                    </div>
+                    <div class="input-group mb-3 row col-12 col-sm-6">
+                      <Label for="colegio"> Turno: </Label>
+                      <select class="form-control select2 select2-danger" name="colegio" id="colegio">
+                        <option value="volvo">Matutino</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                    </div>
+                    <div class="input-group mb-3 col-12 col-sm-6">
+                      <Label for="colegio"> Série/Ano: </Label>
+                      <select class="form-control select2 select2-danger" name="colegio" id="colegio">
+                        <option value="volvo"></option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                    </div>
+
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+                <!-- Horizontal Form -->
+
+              </div>
+              <!--/.col (left) -->
+              <!-- right column -->
+
+            </div>
+            <!-- /.row -->
+          </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+        <div class="text-right colm-m-3 ">
+          <button class="btn bg-info text-left">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+</body>
+
+</html>
