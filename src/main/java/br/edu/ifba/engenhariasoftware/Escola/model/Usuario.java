@@ -5,8 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.validation.constraints.NotBlank;
 
 
 
@@ -24,13 +22,10 @@ public class Usuario{
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     
-    @NotBlank(message = "Nome é obrigatório")
     private String nome;
 
-    @NotBlank(message = "Descrição é obrigatório")
     private String cpf;
 
-    @NotBlank(message ="O senha é obrigatório")
     private String senha;
 
     private String email;
@@ -38,7 +33,6 @@ public class Usuario{
     private String dataNascimento;
     
     private String telefone;
-    @OneToMany
-    @JoinColumn(name = "categoria_id")
-    private List<Aluno> alunos;
+    
+ 
 }

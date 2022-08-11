@@ -11,20 +11,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+
+
 import javax.validation.Valid;
 
 @Controller
-@RequestMapping("/Usuario/")
-public UsuarioController{
-
-    @GetMapping("TelaPrincipal")
-    public String mostrarPrincipal(){
-        return"usuario/telaprincipal";
-    }
+@RequestMapping("/usuario/")
+public class UsuarioController{
     
-    @GetMapping("Cadastro")
+    @GetMapping("cadastro")
     public String mostrarCadastro(){
-
-        return"usuario/cadastrarUsuario";
+        System.out.println("CAIU AQUIIII");
+        return"usuario/cadastrar";
     }
 }

@@ -1,1 +1,6 @@
+br/edu/engenhariasoftware/escola/model/Endereco.class
+br/edu/engenhariasoftware/escola/controller/UsuarioController.class
+br/edu/engenhariasoftware/escola/model/Aluno.class
+br/edu/engenhariasoftware/escola/repository/UsuarioRepository.class
 br/edu/ifba/engenhariasoftware/Escola/EscolaApplication.class
+br/edu/engenhariasoftware/escola/model/Usuario.class
